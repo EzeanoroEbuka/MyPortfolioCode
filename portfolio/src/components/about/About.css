@@ -1,0 +1,48 @@
+#about-body{
+    max-width: 950px;
+    margin: 0 auto; 
+    padding: 0 20px;
+}
+.Header{
+    margin-top: 70px;
+    border: 4px solid black;
+    width: 20%;
+    justify-self: center;
+    text-align: center;
+    justify-Content: center;
+    font-Size: 35px;
+    font-Weight: 70px;
+}
+
+.second-pic{
+    width: 30vw;
+    height: 20vw;
+    text-align: center;
+    border: 2px solid rgb(48, 42, 165);
+}
+.content{
+    text-align: center;
+}
+
+
+.design-dev{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 90px;
+}
+
+.develop-text{
+    text-align: left;
+    align-content:start;
+    width: 30vw;
+}
+
+.Front-text{
+    text-align: center;
+}
+
+.cv-btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

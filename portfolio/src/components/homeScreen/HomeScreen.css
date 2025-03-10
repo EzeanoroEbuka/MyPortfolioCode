@@ -1,0 +1,233 @@
+#home {
+  display: flex;
+  flex-direction: column; 
+  min-height: 100vh; 
+  margin-top: 50px;
+}
+  .parent {
+    display: flex;
+    justify-content: end;
+    background-color: rgb(228, 225, 225);
+    padding-left: 40px;
+  }
+  .nav_bar {
+    flex: 1;
+    background-color: black;
+    clip-path: polygon(12vw 0, 90vw 0, 90vw 90vw, 0 90vw);
+    display: block;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .myName{
+    font-size: 40px;
+  }
+
+  .pics {
+    text-align: center;
+  }
+
+  .greating-text {
+    text-align: left;
+  }
+
+  .botton-logo {
+    display: flex;
+    text-align: left;
+  }
+
+  .first_major {
+    display: flex;
+  }
+  .botton-logo div {
+    position: relative;
+    justify-content: left;
+    width: 100px;
+    height: 100px;
+  }
+
+  .box,
+  .git-box,
+  .linkin-box {
+    width: 50px; 
+    height: 50px;
+  }
+
+  .socia-logo,
+  .git-logo,
+  .linkin-logo {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+  }
+
+  .bottom-text {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: block;
+  }
+
+
+ 
+@media all and (min-width: 1000px) and (max-width: 1190px){
+  .container {
+    .parent {
+      width: 90%;
+    }
+    .nav_bar {
+      width: 60%;
+    }
+    .bottom-text {
+      width: 92%;
+    }
+    .greating-text {
+      width: 30vw;
+    }
+    .pics{
+      width: 60vw;
+      height: 100% 
+    }
+  }
+}
+@media all and (min-width: 800px) and (max-width: 999px){
+  .container {
+    .parent {
+      width: 80%;
+    }
+    .nav_bar {
+      width: 70%;
+    }
+    .bottom-text {
+      width: 82%;
+    }
+    .greating-text {
+      width: 20vw;
+    }
+    .pics{
+      width: 60vw;
+      height: 100% 
+    }
+    .myName{
+      font-size: 32px;
+    }
+    }
+  } 
+@media all and (min-width: 800px) and (max-width: 999px){
+  .container {
+    .parent {
+      width: 80%;
+    }
+    .nav_bar {
+      width: 70%;
+    }
+    .bottom-text {
+      width: 82%;
+    }
+    .greating-text {
+      width: 20vw;
+    }
+    .pics{
+      width: 60vw;
+      height: 100% 
+    }
+    }
+  }
+   
+@media all and (min-width: 600px) and (max-width: 799px){
+  .container {
+    .parent {
+      width: 80%;
+    }
+    .nav_bar {
+      width: 60%;
+    }
+    .bottom-text {
+      width: 83%;
+    }
+    .greating-text {
+      width: 15vw;
+    }
+    .pics{
+      width: 60vw;
+      height: 100% 
+    }
+    .myName{
+      font-size: 20px;
+    }
+    .botton-logo{
+      width: 50px;
+      height: 50px;
+
+    }
+  .box,
+  .git-box,
+  .linkin-box {
+    width: 35px; 
+    height: 35px;
+  }
+  .socia-logo,
+  .git-logo,
+  .linkin-logo {
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+  }
+    }
+  }
+  @media all and (min-width: 400px) and (max-width: 599px){
+    .container {
+      .parent {
+        width: 80%;
+      }
+      .nav_bar {
+        width: 60%;
+      }
+      .logo{
+        width: 20px;
+        height: 20px;
+      
+      }
+      .bottom-text {
+        width: 84%;
+      }
+      .greating-text {
+        width: 15vw;
+      }
+      .pics{
+        width: 60vw;
+        height: 100% 
+      }
+      .myName{
+        font-size: 10px;
+      }
+      .botton-logo{
+        width: 20px;
+        height: 20px;
+  
+      }
+    .box,
+    .git-box,
+    .linkin-box {
+      width: 15px; 
+      height: 15px;
+    }
+    .socia-logo,
+    .git-logo,
+    .linkin-logo {
+      position: absolute;
+      top: 8%;
+      left: 45%;
+      transform: translate(-50%, -50%);
+      width: 10px;
+      height: 10px;
+    }
+      }
+    } 

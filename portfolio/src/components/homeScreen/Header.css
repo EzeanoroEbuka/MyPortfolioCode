@@ -1,0 +1,85 @@
+.parent_class {
+  display: flex;
+  justify-content: end;
+  margin-right: 30px;
+  
+
+  .parent_list {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+  }
+
+  .parent_list li a {
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+    font-weight: 650;
+  }
+}
+
+@media all and (min-width: 1120px) and (max-width: 1190px) {
+  .parent_class {
+    .parent_list {
+      gap: 50px;
+    }
+  }
+}
+@media all and (min-width: 1080px) and (max-width: 1119px) {
+  .parent_class {
+    .parent_list {
+      gap: 50px;
+    }
+  }
+}
+@media all and (min-width: 980px) and (max-width: 1079px) {
+  .parent_class {
+    .parent_list {
+      gap: 30px;
+    }
+  }
+}
+@media all and (min-width: 900px) and (max-width: 979px) {
+  .parent_class {
+    .parent_list {
+      gap: 20px;
+    }
+  }
+}
+
+@media all and (min-width: 800px) and (max-width: 899px) {
+  .parent_class {
+    .parent_list {
+      gap: 25px;
+    }
+  }
+}
+
+@media all and (min-width: 600px) and (max-width: 799px) {
+  .parent_class {
+    .parent_list {
+      gap: 25px;
+    }
+
+    .parent_list li a {
+      font-size: small;
+      font-weight: 600;
+    }
+  }
+}
+
+@media all and (min-width: 400px) and (max-width: 699px) {
+    .parent_class {
+      .parent_list {
+        gap: 8px;
+      }
+  
+      .parent_list li a {
+        font-size: 10px;
+        font-weight: 500;
+      }
+    }
+  }

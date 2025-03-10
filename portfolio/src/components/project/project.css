@@ -1,0 +1,15 @@
+
+.project-list{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.project-list li{
+    display: inline;
+    border: 2px solid rgb(160, 154, 154);
+    border-radius: 10px;
+    text-align: center;
+    align-self: center;
+    background-color: rgb(223, 221, 221);
+}

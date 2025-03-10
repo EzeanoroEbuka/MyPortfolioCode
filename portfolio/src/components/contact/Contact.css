@@ -1,0 +1,16 @@
+#contact {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.contact-body {
+    text-align: center;
+    background-color: rgb(206, 208, 210);
+    border: 2px solid black;
+    border-radius: 2%;
+    /* width: 50%; */
+    padding: 20px;
+}
