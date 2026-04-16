@@ -104,7 +104,7 @@
 }
 
 .btn-primary:hover {
-  transform: translateY(-2px);
+  transform: translateY(-5px);
   box-shadow: 0 8px 20px var(--accent-purple-glow);
 }
 
@@ -124,6 +124,10 @@
 .btn-secondary:hover {
   background: var(--glass-bg);
   border-color: var(--text-primary);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px var(--glass-bg);
+
+
 }
 
 @media (max-width: 1024px) {
