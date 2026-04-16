@@ -1,95 +1,47 @@
 import React from "react";
-import "../about/About.css";
+import "./About.css";
 import MyCv from "../../assets/Ezeanoro-Ebuka-Resume.pdf";
-import { Download } from "lucide-react";
+import { Download, ExternalLink } from "lucide-react";
 
 export default function About() {
   return (
-    <div id="about-body">
-      <div>
-        <p className="Header">About Me</p>
-      </div>
-      <div className="Front-text">
-        <h4>
-          Highly motivated and result-driven in software
-          development,demonstrating success in collaborating with
-          cross-functional teams to solve problems and improve overall workflow
-          efficiency.
-        </h4>
-      </div>
-
-      <pre
-        style={{ textAlign: "center", fontWeight: "bolder", marginTop: "40px" }}
-      >
-        | EXPLORE |
-      </pre>
-      <pre
-        style={{ textAlign: "center", fontWeight: "bolder", marginTop: "40px" }}
-      >
-        {" "}
-        ——— \\\/// ———
-      </pre>
-
-      <div className="content">
-        <div className="design-dev">
-          <div>
-            <h2>
-              <p>Design</p>
-            </h2>
-            <h4>
-              Proven ability to design,implement,test and deploy software
-              solutions in various platforms.
-            </h4>
-          </div>
-          <div>
-            <h2>
-              <p>Development</p>
-            </h2>
-            <h4 className="develop-text">
-              developing software solutions,With hands-on experience using tools
-              such as : Maven , React, Django , SpringBoot.
-            </h4>
+    <section id="about-body" className="about-section">
+      <h2 className="section-title">About Me</h2>
+      
+      <div className="about-content">
+        <div className="about-text-container">
+          <p className="about-text-lead">
+            Highly motivated and result-driven in software development, demonstrating success in collaborating with cross-functional teams to solve problems and improve overall workflow efficiency.
+          </p>
+          <p className="about-text">
+            I believe that great software bridges the gap between design and functionality. My approach involves not only writing clean, maintainable code but also understanding the core problem to deliver optimal solutions. Constant learning and adaptability are the pillars of my career as an engineer.
+          </p>
+          
+          <div className="cv-actions">
+            <a href={MyCv} target="_blank" rel="noopener noreferrer" className="btn-primary">
+              Open CV <ExternalLink size={18} />
+            </a>
+            <a href={MyCv} download className="btn-secondary">
+              Download CV <Download size={18} />
+            </a>
           </div>
         </div>
-        <div>
-          <h2>
-            <p>Maintainance</p>
-          </h2>
-          <h4>
-            Debug technical issues , I posses problem-solving skills with a
-            continuous drive for learning to maintain and staying updated with
-            the latest tech trends.
-          </h4>
-          <nav className="cv-btns">
-            <a href={MyCv} target="_blank" rel="noopener noreferrer">
-              <button
-                style={{
-                  padding: "25px 60px",
-                  background: "aqua",
-                  fontWeight: "bolder",
-                  borderRadius: 10,
-                }}
-              >
-                OPEN CV
-              </button>
-            </a>
-            <a download href={MyCv}>
-              <pre>
-                <button
-                  style={{
-                    padding: "20px",
-                    background: "rgb(242, 6, 50)",
-                    fontWeight: "bolder",
-                    borderRadius: 10,
-                  }}
-                >
-                  DOWNLOAD CV <Download size="20" />
-                </button>
-              </pre>
-            </a>
-          </nav>
+
+        <div className="about-cards">
+          <div className="about-card">
+            <h3>Design</h3>
+            <p>Proven ability to design, implement, test and deploy software solutions across various platforms, prioritizing exceptional user experiences.</p>
+          </div>
+          <div className="about-card">
+            <h3>Development</h3>
+            <p>Developing robust software solutions with hands-on experience using modern tools and frameworks like Maven, React, Django, and SpringBoot.</p>
+          </div>
+          <div className="about-card">
+            <h3>Maintenance</h3>
+            <p>Adept at debugging technical issues with strong problem-solving skills, continuously staying updated with the latest tech trends to ensure systems remain efficient over time.</p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

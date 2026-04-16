@@ -1,42 +1,43 @@
 import React from "react";
-import "./contact.css";
+import "./Contact.css";
 
 function ContactMe() {
   const GitHub = "https://github.com/EzeanoroEbuka";
-
   const LinkedIn = "https://www.linkedin.com/in/chukwuebuka-ezeanoro-363651302/";
 
   return (
-    <div id="contact">
-      <p className="Header">CONTACT</p>
+    <footer id="contact" className="contact-section">
+      <h2 className="contact-title">Let's Connect</h2>
+      <p className="contact-subtitle">
+        Whether you have a question, a project idea, or just want to say hi, my inbox is always open.
+      </p>
 
-      <div className="contact-body">
-        <h2>Get in touch</h2>
-        <p>
-          <h3>Message Me on WhatsApp</h3>
-          <h4>+2349032489848</h4>
-        </p>
-
-        <p>
-          <h3>Email Me </h3>
+      <div className="contact-grid">
+        <div className="contact-card">
+          <h3>WhatsApp</h3>
+          <h4>+234 903 248 9848</h4>
+        </div>
+        
+        <a href="mailto:ebestkeyz@gmail.com" className="contact-card">
+          <h3>Email</h3>
           <h4>ebestkeyz@gmail.com</h4>
-        </p>
+        </a>
 
-        <p>
-          <h3>Connect with me on LinkedIn</h3>
-          <a href={LinkedIn} target="_blank" rel="noopener noreferrer">
-            <h4>LinkedIn</h4>
-          </a>
-        </p>
+        <a href={LinkedIn} target="_blank" rel="noopener noreferrer" className="contact-card">
+          <h3>LinkedIn</h3>
+          <h4>Profile</h4>
+        </a>
 
-        <p>
-          <h3>Explore my codes on Github</h3>
-          <a href={GitHub} target="_blank" rel="noopener noreferrer">
-            <h4>GitHub</h4>
-          </a>
-        </p>
+        <a href={GitHub} target="_blank" rel="noopener noreferrer" className="contact-card">
+          <h3>GitHub</h3>
+          <h4>Repositories</h4>
+        </a>
       </div>
-    </div>
+
+      <div className="footer">
+        <p>&copy; {new Date().getFullYear()} Ezeanoro Chukwuebuka. Built with React & Vite.</p>
+      </div>
+    </footer>
   );
 }
 
