@@ -152,12 +152,12 @@
   }
 
   .hero-image-wrapper {
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 855px) {
   .hero-section {
     flex-direction: column-reverse;
     justify-content: center;
@@ -181,8 +181,8 @@
   }
 
   .hero-image-wrapper {
-    width: 280px;
-    height: 280px;
+    width: 360px;
+    height: 360px;
   }
 
   .hero-image-backdrop {
