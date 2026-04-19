@@ -11,6 +11,12 @@ import MySqlLogo from "../../assets/SQL-Logo.png";
 import MongoLogo from "../../assets/Mongo-Logo.png";
 import TypeScriptLogo from "../../assets/Typescript-Logo.png";
 import C from "../../assets/C-Logo.png";
+import Python from "../../assets/python-logo.png"
+import Java from "../../assets/Java-Emblem.jpg"
+import Golang from "../../assets/Golang.png"
+import SpringBoot from "../../assets/Spring-Boot.png"
+
+
 
 function Skills() {
   const currentSkills = [
@@ -20,6 +26,11 @@ function Skills() {
     { name: "React", logo: ReactLogo },
     { name: "GIT", logo: Git },
     { name: "Figma", logo: Figma },
+    { name: "Python", logo: Python },
+    { name: "Java", logo: Java },
+    { name: "Golang", logo: Golang },
+    { name: "SpringBoot", logo: SpringBoot }
+
   ];
 
   const learningSkills = [
